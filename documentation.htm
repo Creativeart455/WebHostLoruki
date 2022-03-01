@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="utilities.css">
+    <link rel="stylesheet" href="margin&padding.css">
+    <link rel="stylesheet" href="/responsive.css">
+    <title>Loruki | Cloud Hosting For Everyone</title>
+</head>
+
+<body class="docs">
+    <header>
+        <nav class="flex container">
+            <a href="/index2.htm"><h1>Loruki.</h1></a>
+            <div id="navContainer">
+                <ul id="nav" class="flex">
+                    <li><a href="/index2.htm">Home</a></li>
+                    <li><a href="/Features.htm">Features</a></li>
+                    <li><a href="/documentation.htm">Documentation</a></li>
+                </ul>
+            </div>
+            <div class="lang flex" id="lang-translate">
+                <a id="lang-img-a" href="/راهنما.htm"><img id="lang-img"  src="/images/ir_64.gif" width="10px"></a>
+                <a href="/راهنما.htm" id="lang-text" >FA</a>
+            </div>
+            <div id="ham"><i class="fas fa-bars"></i></div>
+        </nav>
+        <section class="docs-head">
+            <div class="container flex">
+                <div class="data">
+                    <h1>Docs</h1>
+                    <p>Learn how to setup and install Loruki platform</p>
+                </div>
+                <div class="img">
+                    <img src="/images/docs.png" alt="">
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <div class="container grid">
+            <aside class="card ">
+                <ul class="my-2">
+                    <h5 class="my-1">Essentials</h5>
+                    <li>Introduction</li>
+                    <li>About Loruki</li>
+                    <li>Installation</li>
+                </ul>
+                <ul class=" my-2">
+                    <h5 class="my-1">Deployment</h5>
+                    <li>Setting up a container</li>
+                    <li>Using CLI</li>
+                    <li>Managing Resources</li>
+                    <li>Upgrade & Downgrade</li>
+                </ul>
+            </aside>
+            <article class="card flex">
+
+                <h4>Introduction</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores modi delectus, repellat non nobis a
+                    culpa. Eligendi quo animi, ipsam reiciendis placeat blanditiis. Explicabo eveniet, tenetur soluta
+                    blanditiis suscipit ea doloribus excepturi distinctio numquam sed, optio facere inventore aliquam
+                    voluptas atque commodi, accusantium quisquam quia! Provident sit similique, minus reiciendis
+                    consequuntur consectetur quia, architecto ut, eum quasi exercitationem quos deserunt!</p>
+                <div class="alert alert-success">
+                    <i class="fas fa-info"></i>Lorem, ipsum dolor sit amet consectetur adipisicing.
+                </div>
+                <h5>Lorem, ipsum dolor.</h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam eligendi excepturi sit.</p>
+                <a href="" class="btn btn-primary">Install CLI</a>
+                <h5>Requirements</h5>
+                <ul>
+                    <li>Windows 10, mac OSx, Linux</li>
+                    <li>Node.js v12 or higher</li>
+                </ul>
+
+                <h5>Install</h5>
+                <p>Mac (Homebrew)</p>
+                <pre><code>$ brew install loruki-cli</code></pre>
+                <p>NPM</p>
+                <pre><code>$ npm install loruki-cli</code></pre>
+                <p>Yarn</p>
+                <pre><code>$ yarn install loruki-cli</code></pre>
+
+            </article>
+        </div>
+    </main>
+
+    <footer class="bg-dark p-3">
+        <div class="container flex">
+            <div class="data flex">
+                <h4>Danial Ranjbar</h4>
+                <h6>Copyright &copy; 2020</h6>
+            </div>
+            <ul class="nav flex">
+                <li><a href="/index2.htm">Home</a></li>
+                <li><a href="/features.htm">Features</a></li>
+                <li><a href="/documentation.htm">Documentation</a></li>
+            </ul>
+            <div class="social flex">
+                <a href=""><i class="fab fa-twitter"></i></i></a>
+                <a href=""><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                <a href=""><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                <a href=""><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // <!-- ----------------------------JS for Toggle Menu----------------------- -->
+
+        let navContainer = document.getElementById("navContainer");
+        let hamMenu = document.getElementById("ham");
+        let nav = document.getElementById("nav");
+        navContainer.style.maxHeight = "0px";
+
+        hamMenu.addEventListener('click', function () {
+            if (navContainer.style.maxHeight == "0px") {
+                navContainer.style.maxHeight = "200px";
+
+            } else {
+                navContainer.style.maxHeight = "0px";
+            }
+        })
+
+
+
+
+    </script>
+
+</body>
+
+</html>

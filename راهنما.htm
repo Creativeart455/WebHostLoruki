@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="utilities.css">
+    <link rel="stylesheet" href="margin&padding.css">
+    <link rel="stylesheet" href="/responsive.css">
+    <title>Loruki | Cloud Hosting For Everyone</title>
+</head>
+
+<body class="docs farsi">
+    <header>
+        <nav class="flex container">
+            <a href="/index.htm"><h1>لروکی</h1></a>
+            <div id="navContainer">
+                <ul id="nav" class="flex">
+                    <li><a href="/index.htm">خانه</a></li>
+                    <li><a href="/امکانات.htm">امکانات</a></li>
+                    <li><a href="/راهنما.htm">راهنما</a></li>
+                </ul>
+            </div>
+            <div class="lang flex" id="lang-translate">
+                <a id="lang-img-a" href="/documentation.htm"><img id="lang-img"  src="/images/usa_flag.png" width="10px"></a>
+                <a href="/documentation.htm" id="lang-text" >EN</a>
+            </div>
+            <div id="ham"><i class="fas fa-bars"></i></div>
+
+        </nav>
+        <section class="docs-head">
+            <div class="container flex">
+                <div class="data">
+                    <h1>مستندات</h1>
+                    <p>نصب و راه اندازی لروکی را اینجا فرا بگیرید</p>
+                </div>
+                <div class="img">
+                    <img src="/images/docs.png" alt="">
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <div class="container grid">
+            <aside class="card ">
+                <ul class="my-2">
+                    <h5 class="my-1">ضروریات</h5>
+                    <li>مقدمه</li>
+                    <li>درباره ی لروکی</li>
+                    <li>نصب</li>
+                </ul>
+                <ul class=" my-2">
+                    <h5 class="my-1">استقرار</h5>
+                    <li>نصب دربرگیرنده</li>
+                    <li>استفاده از سی ال آی</li>
+                    <li>مدیریت منابع</li>
+                    <li>ارتقاء و تغییرات</li>
+                </ul>
+            </aside>
+            <article class="card flex">
+
+                <h4>مقدمه</h4>
+                <p>لروکی در سرویس های هاست اختصاصی وردپرس و  هاست ووکامرس به طور روزانه از تمام فایل‌ها و دیتابیس سایت شما بک‌ اپ تهیه می‌کند و در فضای offsite  (فضایی غیر از دیتاسنتر اصلی) نگهداری می کند. 
+
+                    طبق بررسی های میهن وردپرس، سیاست‌های «بازیابی فاجعه» در لیمو هاست خیلی محتاطانه پیاده شده و عملاً یک Mirror از اطلاعات حیاتی شما، در فضایی به نام «سایت پشتیبان داغ» (Hot Site)  نیز ذخیره می‌شود تا در صورت بروز سانحه و یا فجایع طبیعی، اطلاعات شما از گزند آسیب‌ها مصون بماند.
+                    
+                    </p>
+                <div class="alert alert-success">
+                    <i class="fas fa-info"></i>عاشق فرآیند اصلی چربی سوزی است. حالت‌های انتخابی
+                </div>
+                <h5>عاشق فرآیند اصلی است. حالت‌های انتخابی</h5>
+                <p>خود درد، درد باید در فرآیند اصلی آدیپیسی اجرا شود. این عالی است که او را انتخاب کنید.</p>
+                <a href="" class="btn btn-primary">نصب سی ال آی</a>
+                <h5>پیش نیاز ها</h5>
+                <ul>
+                    <li>ویندوز 10 / سیستم عامل مک / لینوکس</li>
+                    <li>Node.js ورژن 12 یا بالا تر</li>
+                </ul>
+
+                <h5>نصب</h5>
+                <p>Mac (Homebrew)</p>
+                <pre><code>$ brew install loruki-cli</code></pre>
+                <p>NPM</p>
+                <pre><code>$ npm install loruki-cli</code></pre>
+                <p>Yarn</p>
+                <pre><code>$ yarn install loruki-cli</code></pre>
+
+            </article>
+        </div>
+    </main>
+
+    <footer class="bg-dark p-3">
+        <div class="container flex">
+            <div class="data flex">
+                <h4>دانیال رنجبر</h4>
+                <h6>1400 &copy; حق نشر محفوظ</h6>
+            </div>
+            <ul class="nav flex">
+                <li><a href="/index.htm">خانه</a></li>
+                <li><a href="/امکانات.htm">امکانات</a></li>
+                <li><a href="/راهنما.htm">راهنما</a></li>
+        </ul>
+            <div class="social flex">
+                <a href=""><i class="fab fa-twitter"></i></i></a>
+                <a href=""><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                <a href=""><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                <a href=""><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // <!-- ----------------------------JS for Toggle Menu----------------------- -->
+
+        let navContainer = document.getElementById("navContainer");
+        let hamMenu = document.getElementById("ham");
+        let nav = document.getElementById("nav");
+        navContainer.style.maxHeight = "0px";
+
+        hamMenu.addEventListener('click', function () {
+            if (navContainer.style.maxHeight == "0px") {
+                navContainer.style.maxHeight = "200px";
+
+            } else {
+                navContainer.style.maxHeight = "0px";
+            }
+        })
+
+
+
+
+    </script>
+
+</body>
+
+</html>

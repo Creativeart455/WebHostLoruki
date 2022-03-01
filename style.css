@@ -1,0 +1,552 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary-color: #047aed;
+    --container-color: #b4bece;
+    --secondry-color: #1c3fa8;
+    --dark-color: #002240;
+    --light-color: #f4f4f4;
+    --success-color: #5cb85c;
+    --error-color: #d9534f;
+}
+
+body {
+    font-family: 'lato', sans-serif;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+h1, h2 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+p {
+    margin: 10px 0;
+}
+
+img {
+    width: 100%;
+}
+
+.navbar {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+
+/* header */
+header {
+    background-color: #047aed;
+}
+
+header .container {
+    padding: 10px 40px;
+    margin: auto;
+}
+
+
+ul li {
+    padding: 10px;
+    margin: 0 5px;
+}
+
+ul li a {
+    padding: 10px 0;
+}
+
+ul li a:hover {
+    border-bottom: 3px solid #fff;
+}
+
+header a, header h1 {
+    cursor: pointer;
+    color: #fff;
+}
+.farsi header nav>a:first-child,
+.farsi header #navContainer
+{
+    margin-left: auto;
+    margin-right: unset;
+}
+header nav>a:first-child{
+    margin-left: unset;
+    margin-right: auto;
+}
+
+nav.flex {
+    justify-content: space-between;
+    overflow: visible;
+}
+#lang-translate{
+    width: 70px;
+    height: 30px;
+    background-color: var(--dark-color);
+    border-radius: 5px;
+}
+#lang-translate.flex{
+    justify-content: space-around;
+}
+#lang-translate img{
+    width: 20px;
+}
+
+#navContainer {
+    z-index: 1000;
+    transition: max-height 0.2s;
+    margin-bottom: 40px;
+
+
+}
+
+#nav {
+    z-index: 1000;
+
+}
+
+#ham {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+/* showcase */
+.showcase {
+    background-color: var(--primary-color);
+    color: #fff;
+    position: relative;
+}
+
+.showcase .container h2 {
+    font-size: 30px;
+}
+
+
+.showcase .container p {
+    font-size: 20px;
+}
+
+.showcase-form {
+    color: black;
+}
+
+.showcase .grid {
+    grid-template-columns: 55% 45%;
+    overflow: visible;
+}
+
+.showcase-form {
+    height: 350px;
+    position: relative;
+    top: 60px;
+    width: 400px;
+    padding: 40px;
+    z-index: 10;
+}
+
+.showcase .form-control {
+    margin: 30px 0;
+}
+
+.showcase-form input[type="text"],
+.showcase-form input[type="email"] {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid var(--container-color);
+    padding: 3px;
+    font-size: 16px;
+}
+
+.showcase-form input:focus {
+    outline: none;
+}
+
+.showcase-form input:focus::placeholder {
+    color: black;
+}
+
+.showcase::before,
+.showcase::after {
+    content: '';
+    position: absolute;
+    height: 100PX;
+    bottom: -70px;
+    background-color: #fff;
+    right: 0;
+    left: 0;
+    transform: skewY(-2deg);
+    -webkit-transform: skewY(-2deg);
+    -moz-transform: skewY(-2deg);
+    -ms-transform: skewY(-2deg);
+}
+
+
+/* Stats */
+section.stats {
+    padding-top: 100px;
+}
+
+.stat-heading {
+    max-width: 500px;
+    margin: auto;
+}
+
+section.stats .grid i {
+    grid-row: 2/3;
+    font-size: 3rem;
+}
+
+section.stats .grid h4 {
+    grid-row: 4/5;
+    font-size: 2rem;
+}
+
+section.stats .grid p {
+    color: var(--primary-color);
+    margin: 15px 0;
+
+}
+
+/* cli */
+section.cli .grid {
+    grid-template-rows: repeat(10px, 1fr);
+}
+
+section.cli .grid img {
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+section.cli .grid .card {
+    grid-column: 3/4;
+}
+
+/* Cloud */
+section.cloud {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+/* Languages */
+section.languages .flex {
+    flex-wrap: wrap;
+}
+
+section.languages .card {
+    margin: 18px 10px 40px;
+    transition: transform 0.2s ease-in;
+}
+
+section.languages .card:hover {
+    transform: translateY(-15px);
+}
+
+section.languages .flex h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+/* footer */
+
+footer a {
+    color: #fff;
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+footer .data, footer .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+footer .nav>li>a:hover {
+    border: none;
+    color: teal;
+}
+
+.social>* {
+    margin: 20px;
+    font-size: 2rem;
+
+}
+
+
+/* Features */
+
+.features-head .container.flex {
+    justify-content: space-between;
+}
+
+.features-head h1 {
+    font-size: 4rem;
+}
+
+.features-head p {
+    color: white;
+}
+
+.features-head .container.flex>div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.features-head img {
+    width: 200px;
+    align-self: center;
+}
+
+.platform {
+    background-color: #ccc;
+}
+
+.platform .grid {
+    justify-items: flex-end;
+}
+
+.platform img {
+    width: 300px;
+}
+
+.lorem .flex {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.lorem .card i {
+    font-size: 2.5rem;
+    margin: 0 20px;
+}
+
+.lorem .grid {
+    grid-template-columns: repeat(6, 1fr);
+    /* grid-template-rows: 100px 100px 100px; */
+    padding: 40px;
+
+}
+
+.lorem .grid .card:nth-child(1) {
+    grid-column: 1/-1;
+}
+
+.lorem .grid .card:nth-child(2) {
+    grid-column: 1/5;
+}
+
+.lorem .grid .card:nth-child(3) {
+    grid-column: 5/-1;
+}
+
+.lorem .grid .card:nth-child(4) {
+    grid-column: 1/3;
+}
+
+.lorem .grid .card:nth-child(5) {
+    grid-column: 3/5;
+}
+
+.lorem .grid .card:nth-child(6) {
+    grid-column: 5/7;
+}
+
+.features section {
+    padding: 50px 0;
+}
+
+
+/* docs */
+.docs-head,
+.docs main {
+    padding: 50px;
+}
+
+.docs-head .flex {
+    justify-content: space-between;
+    color: white;
+}
+
+.docs-head h1 {
+    font-size: 50px;
+}
+
+.docs-head img {
+    width: 200px;
+}
+
+.docs aside .flex,
+.docs aside.flex,
+.docs main .flex,
+.docs main.flex {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: unset;
+}
+
+.docs main .grid {
+    grid-template-columns: 30% 70%;
+    align-items: flex-start;
+    overflow: visible;
+}
+
+.docs main .grid aside {
+    background-color: rgb(228, 226, 226);
+}
+
+.grid aside.card {
+    width: 90%;
+}
+
+.docs main .grid aside ul li {
+    border-bottom: 1px solid #999;
+    padding: 5px;
+    cursor: pointer;
+
+}
+
+.docs main .grid aside ul li:hover {
+    font-weight: bold;
+}
+
+.docs main .grid aside ul:first-child li:nth-child(2) {
+    color: var(--primary-color);
+}
+
+code,
+pre{
+    width: 100%;
+
+}
+
+/* Animations */
+@keyframes slideinfrom-left {
+    0%{
+        transform:translateX(-100%)
+    }
+    100%{
+        transform:translateX(0)
+    }
+}
+@keyframes slideinfrom-right {
+    0%{
+        transform:translateX(100%)
+    }
+    100%{
+        transform:translateX(0)
+    }
+}
+@keyframes slideinfrom-top {
+    0%{
+        transform:translateY(-100%)
+    }
+    100%{
+        transform:translateY(0)
+    }
+}
+@keyframes slideinfrom-bottom {
+    0%{
+        transform:translateY(100%)
+    }
+    100%{
+        transform:translateX(0)
+    }
+}
+.showcase-form {
+    animation: slideinfrom-right 1s ease-in-out;
+}
+
+.showcase-text{
+    animation: slideinfrom-left 1s ease-in-out;
+}
+.stats{
+    animation: slideinfrom-bottom 1s ease-in-out;
+}
+
+.features-head{
+    animation: slideinfrom-left 0.5s ease-in-out;
+}
+
+.platform{
+    animation: slideinfrom-right 0.5s ease-in-out;
+}
+
+.docs-head{
+    animation: slideinfrom-left 0.5s ease-in-out;
+}
+
+main aside{
+    animation: slideinfrom-left 0.5s ease-in-out;
+}
+main article{
+    animation: slideinfrom-right 0.5s ease-in-out;
+}
+.farsi .showcase-form {
+    animation: slideinfrom-bottom 1s ease-in-out;
+}
+
+.farsi .showcase-text{
+    animation: slideinfrom-right 1s ease-in-out;
+}
+.farsi .stats{
+    animation: slideinfrom-bottom 1s ease-in-out;
+}
+
+.farsi .features-head{
+    animation: slideinfrom-right 0.5s ease-in-out;
+}
+
+.farsi .platform{
+    animation: slideinfrom-left 0.5s ease-in-out;
+}
+
+.farsi .docs-head{
+    animation: slideinfrom-right 0.5s ease-in-out;
+}
+
+.farsi main aside{
+    animation: slideinfrom-right 0.5s ease-in-out;
+}
+.farsi main article{
+    animation: slideinfrom-left 0.5s ease-in-out;
+}
+
+/* FA */
+.farsi{
+    text-align: right;
+    direction: rtl;
+
+}
+
+.farsi pre{
+    text-align: left;
+    direction: ltr;
+
+}
